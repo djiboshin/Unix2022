@@ -2,7 +2,7 @@
 git push origin dev
 git checkout stg
 git reset --hard
-git pull
+git pull origin stg
 git merge dev
 git tag `date "+%d-%b-%Y-%H%M"`
 git push origin stg
