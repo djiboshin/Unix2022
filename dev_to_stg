@@ -1,0 +1,8 @@
+#!/bin/bash
+git push origin dev
+git checkout stg
+git reset --hard
+git pull
+git merge dev
+git push origin stg
+git checkout dev
