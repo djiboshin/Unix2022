@@ -1,6 +1,7 @@
 #!/bin/bash
 git checkout prd
-git pull
+git reset --hard
+git pull origin prd
 git merge stg
 git tag `date "+%d-%b-%Y-%H%M"`
 git push origin prd
