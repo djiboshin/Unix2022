@@ -3,6 +3,6 @@ git checkout prd
 git reset --hard
 git pull origin prd
 git merge stg
-git tag `date "+%d-%b-%Y-%H%M"`
+git tag `date "+%d-%b-%Y-%H%M%S"`
 git push origin prd
 git checkout dev
