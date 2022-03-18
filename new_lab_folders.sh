@@ -5,7 +5,6 @@ if [ -n "$1" ]; then
 		exit 1
 	else
 		dir_name=$(printf "lab_%02d" $1)
-		mkdir -p "$dir_name/build" && touch "$_/.gitkeep"
 		mkdir -p "$dir_name/src" && touch "$_/.gitkeep"
 		mkdir -p "$dir_name/doc" && touch "$_/.gitkeep"
 		mkdir -p "$dir_name/cmake" && touch "$_/.gitkeep"
